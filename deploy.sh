@@ -23,7 +23,7 @@ git commit -m 'deploy'
 # if you are deploying to https://sasimi1327.github.io
 # git push -f git@github.com:sasimi1327/sasimi1327.github.io.git main
 
-# if you are deploying to https://sasimi1327.github.io/vite-deploy-sample
-git push -f git@github.com:sasimi1327/vite-deploy-sample.git main:gh-pages
+# if you are deploying to https://sasimi1327.github.io/vue-main-week6
+git push -f git@github.com:sasimi1327/vue-main-week6.git main:gh-pages
 
 cd -
