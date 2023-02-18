@@ -45,11 +45,6 @@ export default {
         .post(url)
         .then((res) => {
 
-          // Swal.fire({
-          //   icon: 'success',
-          //   title: `${res.status === 200 ? '登入成功' : '登入失敗'}`,
-          //   confirmButtonText: 'Got It!'
-          // })
         })
         .catch((err) => {
           // 失敗，回去登入頁

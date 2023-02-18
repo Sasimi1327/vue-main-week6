@@ -44,11 +44,9 @@ export default {
       const url = `${VITE_APP_URL}/api/${VITE_APP_PATH}/products/all`
       this.$http.get(url)
         .then(res => {
-          console.log(res.data)
           this.products = res.data.products
         })
         .catch(err => {
-          console.log(err)
           Swal.fire({
             icon: 'error',
             title: `錯誤 ${err.response.status}`,
@@ -58,7 +56,6 @@ export default {
         })
     },
     addToCart (product) {
-      console.log(product)
       const url = `${VITE_APP_URL}/api/${VITE_APP_PATH}/cart`
       const data = {
         product_id: product.id,
@@ -66,7 +63,6 @@ export default {
       }
       this.$http.post(url, { data })
         .then(res => {
-          console.log(res.data)
           Swal.fire({
             icon: 'success',
             title: res.data.message,
@@ -75,7 +71,6 @@ export default {
           })
         })
         .catch(err => {
-          console.log(err)
           Swal.fire({
             icon: 'error',
             title: `錯誤 ${err.response.status}`,

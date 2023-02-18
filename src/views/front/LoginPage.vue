@@ -53,7 +53,6 @@ export default {
           this.$router.push('/admin/products')
         })
         .catch((err) => {
-          console.log(err)
           Swal.fire({
             icon: 'error',
             title: `錯誤 ${err.response.status}`,

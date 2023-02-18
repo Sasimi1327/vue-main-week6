@@ -23,7 +23,6 @@ export default {
 
       this.$http.get(url)
         .then(res => {
-          console.log(res.data)
           this.product = res.data.product
         })
         .catch(err => {
